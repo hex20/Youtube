@@ -207,7 +207,7 @@ class Youtube
      * @return \StdClass
      * @throws \Exception
      */
-    public function getChannelByName($username, $optionalParams = false, $part = ['id', 'snippet', 'contentDetails', 'statistics', 'invideoPromotion'])
+    public function getChannelByName($username, $optionalParams = false, $part = ['id', 'snippet', 'contentDetails', 'statistics', 'invideoPromotion', 'brandingSettings'])
     {
         $API_URL = $this->getApi('channels.list');
         $params = array(
@@ -227,7 +227,7 @@ class Youtube
      * @return \StdClass
      * @throws \Exception
      */
-    public function getChannelById($id, $optionalParams = false, $part = ['id', 'snippet', 'contentDetails', 'statistics', 'invideoPromotion'])
+    public function getChannelById($id, $optionalParams = false, $part = ['id', 'snippet', 'contentDetails', 'statistics', 'invideoPromotion', 'brandingSettings'])
     {
         $API_URL = $this->getApi('channels.list');
         $params = array(
